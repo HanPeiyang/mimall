@@ -9,7 +9,6 @@
 <script>
 import NavHeader from '../components/NavHeader';
 import NavFooter from '../components/NavFooter';
-import storage from '../storage/index'
 export default {
     name:'home',
     components:{
@@ -17,7 +16,7 @@ export default {
         NavFooter
     },
     mounted(){
-        console.log(storage.clear('user'));
+        
     }
 }
 </script>
