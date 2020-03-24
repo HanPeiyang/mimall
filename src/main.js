@@ -6,6 +6,7 @@ import VueAxios from 'vue-axios'
 import App from './App.vue'
 //可根据跨域方式修改
 axios.defaults.baseURL="/api";
+axios.defaults.timeout=8000;
 //接口错误拦截
 axios.interceptors.response.use(function(response){
   let res=response.data;
